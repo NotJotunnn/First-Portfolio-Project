@@ -1,0 +1,40 @@
+:root {
+    --text-color: #837E9F;
+}
+
+* {
+    border: 1px solid red;
+}
+
+.container {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+.fixedWidth {
+   width: 100px;
+   height: 100px;  
+   margin-right: 20px
+}
+
+.flexibleDiv {
+   -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    width: 80%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; 
+}
+
+.purple {
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+    filter: invert(0%) sepia(0%) hue-rotate(250deg) saturate(10000%) brightness(100%) contrast(0%);
+}
+
+.colorpurple {
+    color: var(--text-color);
+}
